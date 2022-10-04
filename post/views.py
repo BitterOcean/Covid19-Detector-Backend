@@ -4,18 +4,16 @@ from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
 from rest_framework import status
-from keras.models import load_model
-from keras.preprocessing.image import img_to_array
-from keras.preprocessing.image import load_img
+import tensorflow as tf
 import numpy as np
 
-model = load_model('./model/model.h5')
+model = tf.keras.models.load_model('./model/model.h5')
 
 
 def predict(img_name):
-    img = load_img(img_name, grayscale=False, target_size=(64, 64))
+    img = tf.keras.preprocessing.image.load_img(img_name, grayscale=False, target_size=(64, 64))
     disease_class = ['Covid-19', 'Non Covid-19']
-    x = img_to_array(img)
+    x = tf.keras.preprocessing.image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x /= 255
     custom = model.predict(x)
