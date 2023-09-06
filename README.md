@@ -91,16 +91,16 @@ git clone https://github.com/BitterOcean/Covid19-Detector-Backend.git
 then, create a virtual enviroment and install python required packages :
 
 ```bash
+cd Covid19-Detector-Backend
 python3 -m venv .env
-source ~/.env/bin/activate
+source .env/bin/activate
 pip install -r requirements.txt
 ```
 
 finally, go to the project directory and run the bachend django server :
 
 ```bash
-cd Covid19-Detector-Backend
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 Now the server will run on <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a>
