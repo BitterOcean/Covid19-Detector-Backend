@@ -18,5 +18,5 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('', include('Predictor.urls')),
+    path('api/', include('Predictor.urls')),
 ]
