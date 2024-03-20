@@ -1,7 +1,7 @@
 # :mask: **Covid19 Detector**
 ![Awesome](https://img.shields.io/badge/.-Awesome-%23FC60A8?style=for-the-badge&logo=awesomelists)
 ![Builed](https://img.shields.io/azure-devops/build/totodem/8cf3ec0e-d0c2-4fcd-8206-ad204f254a96/2?style=for-the-badge)
-![Static Badge](https://img.shields.io/badge/python-3.10.4-blue?style=for-the-badge)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django?style=for-the-badge)
 ![License](https://img.shields.io/packagist/l/doctrine/orm?style=for-the-badge)
 
 | . | . |
@@ -91,11 +91,24 @@ git clone https://github.com/BitterOcean/Covid19-Detector-Backend.git
 
 then, create a virtual enviroment and install python required packages :
 
+- Linux Users
+
 ```bash
 cd Covid19-Detector-Backend
 python3 -m venv .env
 source .env/bin/activate
 pip install -r requirements.txt
+```
+
+- Windows Users
+
+open a windows terminal and follow the instructions below:
+
+```bash
+cd Covid19-Detector-Backend
+python3 -m venv .env
+.env\Scripts\Activate.ps1
+pip install -r requirements_win.txt
 ```
 
 finally, go to the project directory and run the bachend django server :
@@ -145,6 +158,11 @@ then, go to the project directory and install required node modules :
 ```bash
 npm i
 ```
+if you got any errors try using ```--force``` flag.
+```bash
+npm i --force
+```
+
 after that, to use it locally, you have to change only one line in ```src/constants/routes.jsx```, so :
 ```bash
 cd Covid19-Detector/src/constants
@@ -152,13 +170,13 @@ cd Covid19-Detector/src/constants
 and then change the first line, like below :
 ```diff
 - export const API_ROOT = 'https://covid-19-detector-model.herokuapp.com';
-+ export const API_ROOT = 'http://127.0.0.1:8000/';
++ export const API_ROOT = 'http://127.0.0.1:8000';
 ```
 and finally :
 ```bash
 npm start
 ```
-Now the frontend will run on <a href="http://127.0.0.1:3000/">http://127.0.0.1:3000/</a>.
+Now the frontend will run on <a href="http://127.0.0.1:3000/Covid19-Detector">http://127.0.0.1:3000/Covid19-Detector</a>.
 <br />
 Eventually, here is the point that everything is ready and you can start using the the "Covid19-Detector". :slightly_smiling_face:.
 
