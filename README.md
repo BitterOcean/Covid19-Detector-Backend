@@ -2,6 +2,7 @@
 ![Awesome](https://img.shields.io/badge/.-Awesome-%23FC60A8?style=for-the-badge&logo=awesomelists)
 ![Builed](https://img.shields.io/azure-devops/build/totodem/8cf3ec0e-d0c2-4fcd-8206-ad204f254a96/2?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/PYTHON-3.10_%7C_3.11-blue?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/Python-3.12_%7C_FAILED-red?style=for-the-badge)
 ![License](https://img.shields.io/packagist/l/doctrine/orm?style=for-the-badge)
 
 | . | . |
@@ -78,7 +79,6 @@ this is the architecture of **DenseNet121**
 </div>
 
 ## :woman_technologist: **Web App Backend**
-
 
 [![Pinned Repository](https://github-readme-stats.vercel.app/api/pin/?username=BitterOcean&repo=Covid19-Detector-Backend)](https://github.com/BitterOcean/Covid19-Detector-Backend)
 
